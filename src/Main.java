@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        biggerThan(25.34);
+        sortingDoubleArrayInDescendingOrder();
 
     }
 
@@ -78,14 +78,53 @@ public class Main {
 
     //Problem8 : initializing an array of float  and print elements that are bigger than 35.56 and less than -34.556
     private static void biggerOrSmallerFromGivenNumbers(float num1, float num2) {
-        float[] arr= {36.55f,-55.66f,1f,4f,77.5f};
-        for (int i = 0; i <arr.length ; i++) {
-            if(arr[i]>35.56 || arr[i]<-34.556){
+        float[] arr = {36.55f, -55.66f, 1f, 4f, 77.5f};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 35.56 || arr[i] < -34.556) {
                 System.out.println(arr[i]);
             }
         }
-
-     //
     }
+
+    //Problem9a : initializing an array of double and sort it in ascending  order
+    private static void sortingDoubleArrayInascendingOrder() {
+        double[] arr = {24.88, 4.255, 65.89, 24.59};
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    double temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    //Problem9b : initializing an array of double and sort it  descending order
+    private static void sortingDoubleArrayInDescendingOrder() {
+        double[] arr = {24.88, 4.255, 65.89, 24.59};
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] < arr[j + 1]) {
+                    double temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    //Problem10 : Printing a simbols count in given String
+    private static void contOfa(String string){
+        int count=0;
+        for (int i = 0; i <string.length() ; i++) {
+            if(string.charAt(i)=='a'){
+                ++count;
+            }
+        }
+        System.out.println(count);
+    }
+
+
 }
 
