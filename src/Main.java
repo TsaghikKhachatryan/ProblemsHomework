@@ -1,13 +1,24 @@
 public class Main {
 
     public static void main(String[] args) {
-        countOfTwoDegreeNumbers();
-
+//        initAndPrintArr();
+//        fillArrWithZeros();
+//        fillArrWithZeros();
+//        fillArrFromOneToThousand();
+//        fillWithEvenNumbers();
+//        fillWithOddNumbers();
+//        divisibleByFive();
+//        biggerThanGiverNumber();
+//        biggerOrSmallerFromGivenNumbers();
+//        sortingDoubleArrayInascendingOrder();
+//        sortingDoubleArrayInDescendingOrder();
+//        coւtOfa();
+//        isContainb();
+//        countOfTwoDegreeNumbers();
     }
 
-
     //Problem1 : initializing an array and printing
-    private void initAndPrintArr() {
+    private static void initAndPrintArr() {
         int arr[] = {1, 2, 3, 4, 5, 6};
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
@@ -42,7 +53,6 @@ public class Main {
         }
     }
 
-
     //Problem5 : initializing an array of short with odd numbers in this range [1;300]
     private static void fillWithOddNumbers() {
         short arr[] = new short[300];
@@ -67,17 +77,17 @@ public class Main {
     }
 
     //Problem7 : initializing an array of double  and print elements that are bigger than 24.56
-    private static void biggerThanGiverNumber(double number) {
+    private static void biggerThanGiverNumber() {
         double[] arr = {24.88, 4.255, 65.89, 24.59};
         for (int i = 0; i < arr.length; ++i) {
-            if (arr[i] > number) {
+            if (arr[i] > 24.56) {
                 System.out.println(arr[i]);
             }
         }
     }
 
     //Problem8 : initializing an array of float  and print elements that are bigger than 35.56 and less than -34.556
-    private static void biggerOrSmallerFromGivenNumbers(float num1, float num2) {
+    private static void biggerOrSmallerFromGivenNumbers() {
         float[] arr = {36.55f, -55.66f, 1f, 4f, 77.5f};
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 35.56 || arr[i] < -34.556) {
@@ -115,7 +125,8 @@ public class Main {
     }
 
     //Problem10 : Printing a simbols count in given String
-    private static void coւtOfa(String string) {
+    private static void coւtOfa() {
+        String string="hhsbjbaanbjjaa";
         int count = 0;
         for (int i = 0; i < string.length(); i++) {
             if (string.charAt(i) == 'a') {
@@ -126,7 +137,8 @@ public class Main {
     }
 
     //Problem11 : Printing Yes if String contains b char and No otherwise
-    private static void isContainb(String string) {
+    private static void isContainb() {
+        String string="bhhjkjhhjsk";
         for (int i = 0; i < string.length(); i++) {
             if (string.charAt(i) == 'b') {
                 System.out.println("Yes");
