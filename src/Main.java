@@ -1,7 +1,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        sortingDoubleArrayInDescendingOrder();
 
     }
 
@@ -124,6 +123,18 @@ public class Main {
         }
         System.out.println(count);
     }
+
+    //Problem11 : Printing Yes if String contains b char and No otherwise
+    private static void isContainb(String string){
+        for (int i = 0; i <string.length() ; i++) {
+            if(string.charAt(i)=='b'){
+                System.out.println("Yes");
+                return;
+            }
+        }
+        System.out.println("No");
+    }
+
 
 
 }
