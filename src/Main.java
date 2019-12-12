@@ -7,5 +7,11 @@ public class Main {
             System.out.println(arr[i]);
         }*/
 
+        //Problem2 : initializing an array of int with 0 values
+        /*int arr[]=new int[10];
+        for (int i = 0; i <arr.length; i++) {
+            System.out.println(arr[i]);
+        }*/
+
     }
 }
