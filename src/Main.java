@@ -19,5 +19,15 @@ public class Main {
             arr[i-1]=i;
         }*/
 
+        //Problem4 : initializing an array of byte  with even numbers in the range  [-30;30]
+        /*byte arr[]=new byte[30];
+        byte index=0;
+        for (byte i = -30; i <= 30; i=(byte)(i+2)) {
+            if(i%2==0 && i!=0){
+                arr[index]=i;
+                ++index;
+            }
+        }*/
+
     }
 }
