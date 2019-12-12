@@ -10,20 +10,4 @@ public class Human {
         this.gender = gender;
         this.year = year;
     }
-
-    public void setFirstName(String firstname) {
-        this.firstName = firstname;
-    }
-
-    public void setLastName(String lastname) {
-        this.lastName = lastname;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
 }
