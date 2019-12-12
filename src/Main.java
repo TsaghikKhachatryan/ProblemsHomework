@@ -48,5 +48,13 @@ public class Main {
             }
         }*/
 
+        //Problem6 : initializing an array of double  and print elements that are bigger than 24.56
+        /*double[] arr={24.88,4.255,65.89,24.59};
+        for (int i = 0; i <arr.length ; ++i) {
+            if(arr[i]>24.56){
+                System.out.println(arr[i]);
+            }
+        }*/
+
     }
 }
