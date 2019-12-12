@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
+        countOfTwoDegreeNumbers();
 
     }
 
@@ -114,10 +115,10 @@ public class Main {
     }
 
     //Problem10 : Printing a simbols count in given String
-    private static void contOfa(String string){
-        int count=0;
-        for (int i = 0; i <string.length() ; i++) {
-            if(string.charAt(i)=='a'){
+    private static void coւtOfa(String string) {
+        int count = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == 'a') {
                 ++count;
             }
         }
@@ -125,9 +126,9 @@ public class Main {
     }
 
     //Problem11 : Printing Yes if String contains b char and No otherwise
-    private static void isContainb(String string){
-        for (int i = 0; i <string.length() ; i++) {
-            if(string.charAt(i)=='b'){
+    private static void isContainb(String string) {
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == 'b') {
                 System.out.println("Yes");
                 return;
             }
@@ -135,7 +136,23 @@ public class Main {
         System.out.println("No");
     }
 
-
-
+    //Problem12 : calculate the number of elements that are 2 degrees
+    private static void countOfTwoDegreeNumbers() {
+        int arr[] = {4, 8, 5, 6, 1, 2, 3, 16, 0};
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            while (arr[i] > 0) {
+                if (arr[i] == 1) {
+                    ++count;
+                    break;
+                } else if (arr[i] % 2 != 0) {
+                    break;
+                } else {
+                    arr[i] /= 2;
+                }
+            }
+        }
+        System.out.println(count);
+    }
 }
 
