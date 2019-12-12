@@ -1,4 +1,5 @@
 public class FunctionManager {
+
     public static int sumOfTwoNumbers(int a, int b) {
         return a + b;
     }
@@ -7,7 +8,7 @@ public class FunctionManager {
         return a * b;
     }
 
-    public static void isGreatter(float a, float b) {
+    public static void isGrater(float a, float b) {
         if (a > b) {
             System.out.println("YES");
         } else {
@@ -20,7 +21,7 @@ public class FunctionManager {
     }
 
     public static void checkingGender(Human human) {
-        if (human.gender == "male") {
+        if (human.gender.equals("male")) {
             System.out.println("YES");
         } else {
             System.out.println("NO");
@@ -35,37 +36,31 @@ public class FunctionManager {
         System.out.println(human1.firstName + human2.firstName);
     }
 
-    public static void printNames(Human human1, boolean isfirstname) {
-        System.out.println(isfirstname ? human1.firstName : human1.lastName);
+    public static void printNames(Human human1, boolean isfirstName) {
+        System.out.println(isfirstName ? human1.firstName : human1.lastName);
     }
 
     public static int maxNumberInArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
-                if (arr[j] < arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
+        int maxNum = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (maxNum < arr[i]) {
+                maxNum = arr[i];
             }
         }
-        return arr[0];
+        return maxNum;
     }
 
     public static float minNumberInArray(float[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    float temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
+        float minNumber = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (minNumber > arr[i]) {
+                minNumber = arr[i];
             }
         }
-        return arr[0];
+        return minNumber;
     }
 
-    public static void sortingHuamnArray(Human[] arr) {
+    public static void sortingHumanArray(Human[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j].year > arr[j + 1].year) {

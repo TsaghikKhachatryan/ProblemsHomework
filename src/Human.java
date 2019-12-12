@@ -4,9 +4,9 @@ public class Human {
     String gender;
     int year;
 
-    public Human(String firstname, String lastname, String gender, int year) {
-        this.firstName = firstname;
-        this.lastName = lastname;
+    public Human(String firstName, String lastName, String gender, int year) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.gender = gender;
         this.year = year;
     }
