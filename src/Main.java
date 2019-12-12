@@ -29,5 +29,16 @@ public class Main {
             }
         }*/
 
+        //Problem5 : initializing an array of short with this range's numbers [1;300]
+        /*short arr[]=new short[300];
+        short index=0;
+        for (short i = 1; i <=arr.length; i=(short)(i+1)) {
+            if(i%2!=0 && i!=0){
+                arr[index]=i;
+                System.out.println(arr[index]);
+                ++index;
+            }
+        }*/
+
     }
 }
