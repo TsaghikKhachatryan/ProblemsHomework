@@ -15,6 +15,30 @@ public class Main {
 //        coւtOfa();
 //        isContainb();
 //        countOfTwoDegreeNumbers();
+
+        //**********************************TASK2**************************************
+//
+//        int sum = FunctionManager.sumOfTwoNumbers(5, 77);
+//        double mul = FunctionManager.multiplicationOfTwoNumbers(5.2, 7.55);
+//        FunctionManager.greatestFromThree(57785, 75555, 8922);
+//
+//        Human human1 = new Human("Ann", "Khachatryan", "femaile", 2000);
+//        Human human2 = new Human("Ani", "Melqonyan", "femaile", 2011);
+//        Human human3 = new Human("John", "Smith", "femaile", 1996);
+//
+//        Human[] arrHuman = {human1, human2, human3};
+//
+//        FunctionManager.checkingGender(human1);
+//        FunctionManager.biggestLastName(human1, human2, human3);
+//        FunctionManager.PrintNamesNextEachOther(human1, human3);
+//        FunctionManager.printNames(human2, true);
+//
+//        int[] arr = {2, 3, 4, 5, 6};
+//        float[] arrFloat = {2.0f, 3.5f, 4.66f, 5.477f, 6.144f};
+//        FunctionManager.maxNumberInArray(arr);
+//        FunctionManager.minNumberInArray(arrFloat);
+//        FunctionManager.sortingHuamnArray(arrHuman);
+
     }
 
     //Problem1 : initializing an array and printing
@@ -126,7 +150,7 @@ public class Main {
 
     //Problem10 : Printing a simbols count in given String
     private static void coւtOfa() {
-        String string="hhsbjbaanbjjaa";
+        String string = "hhsbjbaanbjjaa";
         int count = 0;
         for (int i = 0; i < string.length(); i++) {
             if (string.charAt(i) == 'a') {
@@ -138,7 +162,7 @@ public class Main {
 
     //Problem11 : Printing Yes if String contains b char and No otherwise
     private static void isContainb() {
-        String string="bhhjkjhhjsk";
+        String string = "bhhjkjhhjsk";
         for (int i = 0; i < string.length(); i++) {
             if (string.charAt(i) == 'b') {
                 System.out.println("Yes");
