@@ -40,5 +40,13 @@ public class Main {
             }
         }*/
 
+        //Problem6 : initializing an array of int and print elements that are divisible by 5
+        /*int[] arr = {45, 7, 5, 8, 4, 1, 2, 3, 15, 65, 85};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 5 == 0) {
+                System.out.println(arr[i]);
+            }
+        }*/
+
     }
 }
